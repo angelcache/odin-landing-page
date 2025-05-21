@@ -1,0 +1,85 @@
+.top-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 150px 20px 20px 20px;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  max-height: 100vh;
+  min-height: 500px;
+  overflow: auto;
+  background-color: rgb(204, 216, 145);
+}
+
+.top-info h1 p {
+  min-width: 0;
+}
+
+.top-info h1 {
+  color: white;
+  font-size: 38px;
+}
+
+.top-info p {
+  color: rgb(40, 40, 40);
+  font-size: 16px;
+}
+
+.top-info a, .call-to-action a {
+  color: rgb(254, 255, 237);
+  background: linear-gradient(rgb(179, 205, 94), rgb(3, 97, 3));
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+  width: fit-content;
+  white-space: nowrap;
+  border: 1px solid gray;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.top-info a::before,
+.call-to-action a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(rgb(179, 205, 94), gold);
+  transition: width 0.5s ease;
+}
+
+.top-info a:hover::before,
+.call-to-action a:hover::before {
+  width: 100%;
+}
+
+.petal {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(236, 200, 54);
+  text-shadow:
+    -1px -1px 0 white,
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
+}
+
+.top-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  width: 500px;
+  height: 400px;
+}
+
+.top-image {
+  width: 450px;
+  height: 350px;
+  max-width: 100%;
+}

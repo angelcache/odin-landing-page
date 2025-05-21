@@ -1,0 +1,50 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  min-height: 600px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  scroll-margin-top: 140px;
+}
+
+.main-content h1 {
+  padding-top: 40px;
+  color:rgb(236, 200, 54);
+  font-size: 30px;
+}
+
+.flower-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.flower-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.flower-info img:hover {
+  background: linear-gradient(rgb(179, 205, 94), gold);
+  cursor:pointer;
+}
+
+.flower-info img {
+  width: 200px;
+  height: 300px;
+  border: 2px solid rgb(91, 123, 64);
+}
+
+.flower-info p {
+  color: rgb(40, 40, 40);
+  max-width: 200px;
+  text-align: center;
+  padding: 0 0 20px 0;
+}
