@@ -1,6 +1,7 @@
 * {
   font-family: Roboto, Arial;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -13,6 +14,7 @@ header {
   color: white;
   background-color: rgb(91, 123, 64);
   flex-wrap: wrap;
+  z-index: 100;
 }
 
 .logo {
@@ -65,10 +67,11 @@ header {
   font-size: 16px;
 }
 
-.top-info a, .call-to-action button {
+.top-info a, .call-to-action a {
   color: rgb(254, 255, 237);
   background: linear-gradient(rgb(179, 205, 94), rgb(3, 97, 3));
   border-radius: 4px;
+  text-decoration: none;
   padding: 10px;
   position: relative;
   width: fit-content;
@@ -78,7 +81,8 @@ header {
   z-index: 1;
 }
 
-.top-info a::before {
+.top-info a::before,
+.call-to-action a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -87,10 +91,11 @@ header {
   height: 100%;
   z-index: -1;
   background: linear-gradient(rgb(179, 205, 94), gold);
-  transition: width 1s ease;
+  transition: width 0.5s ease;
 }
 
-.top-info a:hover::before {
+.top-info a:hover::before,
+.call-to-action a:hover::before {
   width: 100%;
 }
 
@@ -129,6 +134,7 @@ header {
   min-height: 600px;
   margin: 0 auto;
   padding-bottom: 40px;
+  scroll-margin-top: 140px;
 }
 
 .main-content h1 {
@@ -222,4 +228,16 @@ footer {
   align-items: center;
   min-height: 100px;
   background-color: rgb(91, 123, 64);
+}
+
+
+p a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p a:hover {
+  color: rgb(236, 200, 54);
+  cursor: pointer;
 }
